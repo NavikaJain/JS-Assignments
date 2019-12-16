@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 14</title>
+        <script>
+            var count=0;
+
+            function change()
+            {
+                count++;
+
+                if(count==1)
+                document.slideShow.src="day.png"
+
+                else if(count==2)
+                document.slideShow.src="night.png"
+
+                else if(count==3)
+                document.slideShow.src="off.png"
+
+                else if(count==4)
+                document.slideShow.src="on.png"
+
+                else
+                {   
+                    document.slideShow.src="star.png"
+                    count=0
+                }                      
+            }
+        </script>
+    </head>
+
+    <body>
+        <img src="click.png" name="slideShow" onclick="change()">
+
+
+    </body>
+</html>
