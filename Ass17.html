@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 17</title>
+        <script>
+            var GoogleSubWindow
+            function NewWindow() 
+            {
+                GoogleSubWindow = window.open("https://www.google.com");                   
+            }
+
+            function CloseWindow()
+            {
+                GoogleSubWindow.close()    
+            }
+        </script>
+    </head>
+
+    <body>
+        <center>
+        <img src="click.png" onclick="NewWindow()">
+        <br>
+        <input type="button" value="Close" onclick="CloseWindow()">
+        </center>
+    </body>
+</html>

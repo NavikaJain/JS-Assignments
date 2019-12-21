@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 18</title>
+        <script>
+            var NewWin1, NewWin2, NewWin3, NewWin4, NewWin5, NewWin6;
+            function WinOpen() 
+            {
+                NewWin1=window.open("https://www.google.com","example","height=300,width=300,left=0,top=0")
+                NewWin2=window.open("https://in.yahoo.com","exampl","height=300,width=300,left=0,top=1053")
+                NewWin3=window.open("https://www.youtube.com","examp","height=300,width=300,left=1853,top=0")
+                NewWin4=window.open("https://en.wikipedia.org/wiki/Wiki","exam","height=300,width=300,left=1853,top=1053")
+                NewWin5=window.open("https://expectationsiitr.com","exa", "height=300, width=300, left=776, top=326")
+                NewWin6=window.open("https://geekgazette.org", "ex", "height=300, width=300, left=Math.floor(Math.random()*1853), top=Math.floor(Math.random()*1053)")
+            }
+
+            function WinClose() 
+            {
+                NewWin1.close();
+                NewWin2.close();
+                NewWin3.close();
+                NewWin4.close();
+                NewWin5.close();
+                NewWin6.close();
+                window.close();
+
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <center>
+        <img src="click.png" onclick="WinOpen()">
+        <br>
+        <input type="button" value="Close" onclick="WinClose()">
+        </center>
+    </body>
+</html>

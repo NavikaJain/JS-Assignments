@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 15</title>
+
+        <script>
+            var img=0;
+
+            function DirectionChange(direction)
+            {
+                if(direction=="next")
+                img++;
+
+                else if(direction=='back')
+                img--;
+            }
+
+            function ChangeImage()
+            {
+                if (img==0)
+                {
+                    document.slideShow.src="day.png";
+                    document.back.src="blank.png";
+                    document.next.src="next.png";
+                }
+
+                else if(img==1)
+                {
+                    document.slideShow.src="night.png";
+                    document.back.src="back.png";
+                    document.next.src="next.png";
+                }
+
+                else if(img==2)
+                {
+                    document.slideShow.src="smile.png";
+                    document.back.src="back.png";
+                    document.next.src="next.png";
+                }
+
+                else if(img==3)
+                {
+                    document.slideShow.src="sad.png";
+                    document.back.src="back.png";
+                    document.next.src="next.png";
+                }
+
+                else if(img==4)
+                {
+                    document.slideShow.src="on.png";
+                    document.back.src="back.png";
+                    document.next.src="next.png";
+                }
+
+                else if(img==5)
+                {
+                    document.slideShow.src="off.png";                
+                    document.back.src="back.png";
+                    document.next.src="blank.png";
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <center>
+        <img src="day.png" name="slideShow" width="500px" height="500px" >
+        <br>
+        <img name="back" src="blank.png" onclick="DirectionChange('back'); ChangeImage()" width="250px">
+        <img name="next" src="next.png" onclick="DirectionChange('next'); ChangeImage()" width="250px">
+        </center>
+    </body>
+</html>
